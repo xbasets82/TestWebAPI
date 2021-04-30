@@ -1,0 +1,109 @@
+2021-04-29T13:07:30.5239314+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-29T13:07:30.5373544+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-29T13:07:30.5396771+02:00  [INF] Content root path: "C:\Users\keizu\source\repos\WebApplicationRedArbor" (b5d60022)
+2021-04-29T21:42:35.3559659+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-29T21:42:35.3772306+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-29T21:42:35.3797031+02:00  [INF] Content root path: "C:\Users\keizu\source\repos\WebApplicationRedArbor" (b5d60022)
+2021-04-29T21:45:52.1456475+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-29T21:45:52.1782694+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-29T21:45:52.1820388+02:00  [INF] Content root path: "C:\Users\keizu\source\repos\WebApplicationRedArbor" (b5d60022)
+2021-04-29T21:46:50.0727456+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-29T21:46:50.1281189+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-29T21:46:50.1338390+02:00  [INF] Content root path: "C:\Users\keizu\source\repos\WebApplicationRedArbor" (b5d60022)
+2021-04-29T22:37:04.7243535+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-29T22:37:04.7405824+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-29T22:37:04.7440517+02:00  [INF] Content root path: "C:\Users\keizu\source\WebApiRedarbor\RedArbor.API" (b5d60022)
+2021-04-29T22:42:24.3421989+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-29T22:42:24.3558451+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-29T22:42:24.3579841+02:00  [INF] Content root path: "C:\Users\keizu\source\WebApiRedarbor\RedArbor.API" (b5d60022)
+2021-04-29T22:42:24.8888212+02:00 8000006b-0001-fe00-b63f-84710c7967bb [ERR] System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file .edarbor.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at RedArbor.Process.EmployeeProcess.GetAll() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.Process\EmployeeProcess.cs:line 30
+   at RedArbor.API.Controllers.redarborController.GetAllEmployees() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.API\Controllers\redarborController.cs:line 33
+ClientConnectionId:b65347d0-3194-40ce-9e49-d6490836d123
+Error Number:15350,State:1,Class:14 (1051f152)
+2021-04-29T22:45:01.9052360+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-29T22:45:01.9182425+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-29T22:45:01.9199283+02:00  [INF] Content root path: "C:\Users\keizu\source\WebApiRedarbor\RedArbor.API" (b5d60022)
+2021-04-29T22:45:28.3161034+02:00 8000000f-0001-fd00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentException: Format of the initialization string does not conform to specification starting at index 48.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at RedArbor.DAL.Admin.Base..ctor(IConfiguration configuration) in C:\Users\keizu\source\WebApiRedarbor\RedArbor.DAL\Admin\Base.cs:line 21
+   at RedArbor.DAL.EmployeeDAL..ctor(IConfiguration configuration) in C:\Users\keizu\source\WebApiRedarbor\RedArbor.DAL\EmployeeDAL.cs:line 13
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-29T22:45:49.7733792+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-29T22:45:49.7851884+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-29T22:45:49.7872141+02:00  [INF] Content root path: "C:\Users\keizu\source\WebApiRedarbor\RedArbor.API" (b5d60022)
+2021-04-29T22:45:50.2215841+02:00 80000019-0005-fd00-b63f-84710c7967bb [ERR] System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file .\bbdd\redarbor.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at RedArbor.Process.EmployeeProcess.GetAll() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.Process\EmployeeProcess.cs:line 30
+   at RedArbor.API.Controllers.redarborController.GetAllEmployees() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.API\Controllers\redarborController.cs:line 33
+ClientConnectionId:b6f06ded-7701-4fca-afe4-b76691e45815
+Error Number:15350,State:1,Class:14 (4f9929b8)
+2021-04-29T22:46:50.0029192+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-29T22:46:50.0169229+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-29T22:46:50.0199090+02:00  [INF] Content root path: "C:\Users\keizu\source\WebApiRedarbor\RedArbor.API" (b5d60022)
+2021-04-29T22:46:50.4502858+02:00 80000014-0000-fb00-b63f-84710c7967bb [ERR] System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file ..\bbdd\redarbor.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at RedArbor.Process.EmployeeProcess.GetAll() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.Process\EmployeeProcess.cs:line 30
+   at RedArbor.API.Controllers.redarborController.GetAllEmployees() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.API\Controllers\redarborController.cs:line 33
+ClientConnectionId:bb71543f-64c9-4c25-82f1-e2ac9d8a13c9
+Error Number:15350,State:1,Class:14 (43ff0083)
+2021-04-29T22:51:02.4658084+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-29T22:51:02.4779558+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-29T22:51:02.4799291+02:00  [INF] Content root path: "C:\Users\keizu\source\WebApiRedarbor\RedArbor.API" (b5d60022)
+2021-04-29T22:55:36.6753735+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-29T22:55:36.6895813+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-29T22:55:36.6921838+02:00  [INF] Content root path: "C:\Users\keizu\source\WebApiRedarbor\RedArbor.API" (b5d60022)
+2021-04-29T22:55:38.3406433+02:00 80000057-0005-fe00-b63f-84710c7967bb [ERR] System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file [DataDirectory]\redarbor.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at RedArbor.Process.EmployeeProcess.GetAll() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.Process\EmployeeProcess.cs:line 30
+   at RedArbor.API.Controllers.redarborController.GetAllEmployees() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.API\Controllers\redarborController.cs:line 33
+ClientConnectionId:c59c5962-7573-499d-b8c8-6aea5aa6cf3a
+Error Number:15350,State:1,Class:14 (088650ef)
+2021-04-29T22:57:00.0176177+02:00 8000010f-0000-ff00-b63f-84710c7967bb [ERR] System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file [DataDirectory]\redarbor.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at RedArbor.Process.EmployeeProcess.GetAll() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.Process\EmployeeProcess.cs:line 30
+   at RedArbor.API.Controllers.redarborController.GetAllEmployees() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.API\Controllers\redarborController.cs:line 33
+ClientConnectionId:0246691c-7506-41af-9bbe-f80fa879495e
+Error Number:15350,State:1,Class:14 (4edc43ba)
+2021-04-29T23:00:05.0590078+02:00 8000005a-0002-ff00-b63f-84710c7967bb [ERR] System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file [DataDirectory]\redarbor.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at RedArbor.Process.EmployeeProcess.GetAll() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.Process\EmployeeProcess.cs:line 30
+   at RedArbor.API.Controllers.redarborController.GetAllEmployees() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.API\Controllers\redarborController.cs:line 33
+ClientConnectionId:28e2e644-66d4-4158-a0b0-3955b2c31670
+Error Number:15350,State:1,Class:14 (5fd055fe)
+2021-04-29T23:01:01.6462592+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-29T23:01:01.6681060+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-29T23:01:01.6712225+02:00  [INF] Content root path: "C:\Users\keizu\source\WebApiRedarbor\RedArbor.API" (b5d60022)
+2021-04-29T23:01:04.0926211+02:00 80000066-0004-fb00-b63f-84710c7967bb [ERR] System.Data.SqlClient.SqlException (0x80131904): An attempt to attach an auto-named database for file [DataDirectory]\redarbor.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.
+   at RedArbor.Process.EmployeeProcess.GetAll() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.Process\EmployeeProcess.cs:line 30
+   at RedArbor.API.Controllers.redarborController.GetAllEmployees() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.API\Controllers\redarborController.cs:line 33
+ClientConnectionId:09f2459d-3801-42b3-ad23-3aad33b19b0b
+Error Number:15350,State:1,Class:14 (6d24585d)

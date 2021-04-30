@@ -1,0 +1,14 @@
+2021-04-30T00:06:12.9669875+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-30T00:06:12.9838051+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-30T00:06:12.9858692+02:00  [INF] Content root path: "C:\Users\keizu\source\WebApiRedarbor\RedArbor.API" (b5d60022)
+2021-04-30T00:06:26.1495889+02:00 8000005e-0002-fe00-b63f-84710c7967bb [ERR] System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Employees'.
+   at RedArbor.Process.EmployeeProcess.GetAll() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.Process\EmployeeProcess.cs:line 30
+   at RedArbor.API.Controllers.redarborController.GetAllEmployees() in C:\Users\keizu\source\WebApiRedarbor\RedArbor.API\Controllers\redarborController.cs:line 33
+ClientConnectionId:b3f84d0f-491d-4b1d-98fd-3a38fd33f09d
+Error Number:208,State:1,Class:16 (c0323771)
+2021-04-30T00:15:20.1683264+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-30T00:15:20.1870670+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-30T00:15:20.1894433+02:00  [INF] Content root path: "C:\Users\keizu\source\WebApiRedarbor\RedArbor.API" (b5d60022)
+2021-04-30T00:22:53.8341097+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-30T00:22:53.8483671+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-30T00:22:53.8508771+02:00  [INF] Content root path: "C:\Users\keizu\source\WebApiRedarbor\RedArbor.API" (b5d60022)
